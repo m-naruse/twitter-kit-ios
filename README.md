@@ -1,3 +1,7 @@
+This repositry is curomized for Unity Plugin.
+
+----
+
 **How to use the customized TwitterKit pod**
 ```
 pod 'TwitterKit5'
