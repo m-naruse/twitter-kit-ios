@@ -3,7 +3,7 @@
 ## Build TwitterKit.framework - x86_64
 xcodebuild \
     -project TwitterKit/TwitterKit.xcodeproj \
-    -scheme TwitterKit -configuration Debug \
+    -scheme TwitterKit -configuration Release \
     -sdk "iphonesimulator" \
     HEADER_SEARCH_PATHS="$(pwd)/TwitterCore/iphonesimulator/Headers $(pwd)/TwitterCore/iphonesimulator/PrivateHeaders"  \
     CONFIGURATION_BUILD_DIR=./iphonesimulator \
@@ -12,7 +12,7 @@ xcodebuild \
 ## Build TwitterKit.framework - armv7, arm64
 xcodebuild \
     -project TwitterKit/TwitterKit.xcodeproj \
-    -scheme TwitterKit -configuration Debug \
+    -scheme TwitterKit -configuration Release \
     -sdk "iphoneos" \
     HEADER_SEARCH_PATHS="$(pwd)/TwitterCore/iphoneos/Headers $(pwd)/TwitterCore/iphoneos/PrivateHeaders"  \
     CONFIGURATION_BUILD_DIR=./iphoneos \
@@ -21,7 +21,7 @@ xcodebuild \
 ## Build TwitterCore.framework - x86_64
 xcodebuild \
     -project TwitterCore/TwitterCore.xcodeproj \
-    -scheme TwitterCore -configuration Debug \
+    -scheme TwitterCore -configuration Release \
     -sdk "iphonesimulator" \
     CONFIGURATION_BUILD_DIR=./iphonesimulator \
     clean build
@@ -29,7 +29,7 @@ xcodebuild \
 ## Build TwitterCore.framework - armv7, arm64
 xcodebuild \
     -project TwitterCore/TwitterCore.xcodeproj \
-    -scheme TwitterCore -configuration Debug \
+    -scheme TwitterCore -configuration Release \
     -sdk "iphoneos" \
     CONFIGURATION_BUILD_DIR=./iphoneos \
     clean build
